@@ -1,0 +1,9 @@
+# Personal Technology Roadmap
+Given the profiles of students I have seen so far at Stevens it seems that accessing either R or Python skills will be somewhat difficult. Most of them seem to have experience of enterprise-type programming languages such as Java, VB.net or similar. My guess, however, is that it might be easier to get students who have experience with Python. Therefore, if I myself expand my knowledge of Python, I might have an easier time collaborating with students. This could also hold for other researchers, e.g. Bill Robinson at Georgia State University and Tianjie Deng at University of Colorado both uses Python in their own work. Last, there are benefits to learning Python since, compared to R, it has a larger number of packages that allow for easy interaction with various web APIs.
+
+I don't necessarily think it's wise for me to spend any larger amounts of time proactively learning Python. Instead I think it would be suitable to apply what I call a "considered reactive approach". This means that when I have students working for me while writing Python could I would use the following workflow:
+
+1. The student would set up identical development environments on both our desktops. This could be done using [Vagrant](https://www.vagrantup.com/).
+2. The student would submit all written code as pull requests to a Github repository to which only I have commit rights. That would enable me to test each iteration of the code, so that I know that I can run it independently. This will be important for sustainability - this way either me or another student can keep on using or working on the script once the original student-developer is gone.
+
+Further, work done in Python should mainly focus on data gathering and munging, as opposed to analysis. This way I can continue to develop my skills in R actively, while still developing my Python skills reactively.
