@@ -1,0 +1,9 @@
+# Complex regexs
+
+I already have a regex that picks out the generative patterns that I am interested in:
+
+    output <- lapply(input, strsplit, split = "(?:-?I\\d+)*-?\\bI3-?(?:I\\d+-?)*", perl = TRUE)
+
+This is done through getting strings that can be found between innovative patterns (contiguous sequences of I1, I2, or I3 that contain at least one I3 marker). However, what I need to do now is to generate a data.frame that has two columns: one for the generative patterns and one for the innovative patterns. Each row should contain a generative pattern and the innovative pattern following right upon the generative pattern in the same row.
+
+How can I accomplish this? I think the solution is to first extract the innovative patterns and then replace them with markers, for example: "innovative_pattern_X" where X represents the score of the innovative pattern (e.g. counting the number of I3 markers, possibly normalized for length).
