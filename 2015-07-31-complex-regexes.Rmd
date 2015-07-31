@@ -1,9 +1,38 @@
-# Complex regexs
+# Complex regexes
 
-I already have a regex that picks out the generative patterns that I am interested in:
+The innovation patterns can be picked out like this:
 
-    output <- lapply(input, strsplit, split = "(?:-?I\\d+)*-?\\bI3-?(?:I\\d+-?)*", perl = TRUE)
+    innovation_patterns <- gsub(input, pattern = "-1-", replacement = "-")
+    innovation_patterns <- lapply(innovation_patterns, str_extract_all, "(?:I\\d-?)*I3(?:-?I\\d)*")
+    innovation_patterns <- lapply(innovation_patterns, unlist)
+    innovation_patterns %>% unlist %>% unique -> innovation_patterns
 
-This is done through getting strings that can be found between innovative patterns (contiguous sequences of `I1`, `I2`, or `I3` that contain at least one `I3` marker). However, what I need to do now is to generate a data.frame that has two columns: one for the generative patterns and one for the innovative patterns. Each row should contain a generative pattern and the innovative pattern following right upon the generative pattern in the same row.
+    idea_scoring <- function(x){
+      x1 <- gsub(x, pattern = "-", replacement = "")
+      x2 <- gsub(x1, pattern = "I1", replacement = "")
+      x3 <- gsub(x2, pattern = "I2", replacement = "")
+      x4 <- gsub(x3, pattern = "I", replacement = "")
+      count_3s <- nchar(x4)
+      length_streak <- nchar(x1)/2
+      count_3s_normalized <- count_3s/length_streak
+      (paste0("start", count_3s_normalized, "stop"))
+    }
 
-How can I accomplish this? I think the solution is to first extract the innovative patterns and then replace them with markers, for example: `innovative_pattern_X` where `X` represents the score of the innovative pattern (e.g. counting the number of `I3` markers, possibly normalized for length).
+    innovation_scores <- lapply(innovation_patterns, idea_scoring)
+    innovation_scores <- unlist(innovation_scores)
+
+    innovation_replacements <- as.data.frame(cbind(innovation_patterns, innovation_scores), stringsAsFactors = FALSE)
+    innovation_replacements <- arrange(innovation_replacements, desc(nchar(innovation_patterns)))
+
+Similarly, the generative patterns can be picked out like this:
+
+    generative_patterns <- lapply(input, strsplit, split = "(?:-?I\\d+)*-?\\bI3-?(?:I\\d+-?)*", perl = TRUE)
+
+after which they can be forced into various categories using specific regexes, e.g.:
+
+    grepl(input, pattern = "(FA-FA|FA-FA-FA)+")
+
+However, it is not clear that the two regexes `(?:I\\d-?)*I3(?:-?I\\d)*` and `(?:-?I\\d+)*-?\\bI3-?(?:I\\d+-?)*` truly are inverse to each other, and even if that is the case, the forced clustering does not pick up every single pattern. What solutions are available? I see two:
+
+1. Create a residual category which picks up all patterns which have not been forced into another category
+2. Create a function which loops across all forced clusters and constructs a custom regex for each pattern. The regex would look for the exact patterns identified by a forced cluster using a positive lookbehind, and then identify the innovation pattern that comes directly after that. This way I could potentially generate a two-column data.frame (IV and DV) right away.
