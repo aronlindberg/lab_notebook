@@ -23,8 +23,6 @@ Now, using the same form of multiple non-capturing groups I want to construct a 
 
 The expected output would be to match initially:
 
-A-B-C-I1-I2-D-E-F-I1-I3-D-D-D-D-I1-I1-I3-I2-I1-I1-I3-I3-I7A
-
 group 0: `A-B-C-I1-I2-D-E-F`, `D-D-D-D`
 
 group 1: `I1-I3`, `I1-I1-I3`
