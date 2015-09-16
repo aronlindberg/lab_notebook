@@ -1,4 +1,4 @@
-# Algorithmic agens as Actor-Networks
+# Algorithmic agents as Actor-Networks
 These actor-networks, in the context of wonga.com, seem to consist of the following components:
 * Direct information (entered by an applicant)
 * Semi-direct information (provided by applicant through connecting to Facebook and other forms of public or semi-public information)
