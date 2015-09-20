@@ -34,7 +34,7 @@ In the `execute.R` script you can then call `source("credentials.R")`. To make s
 ## Knitr templates
 All output should be compiled to a `.docx` document using the `knitr` package and `pandoc` (for converting `.md` files to `.docx` files). An example of how to do this can be seen below:
 
-    knit("analysis/report.Rmd", output = "/output/report.md")
+    knit("/analysis/report.Rmd", output = "/output/report.md")
     system(paste0("pandoc -o ", "report", ".docx ", "report", ".md"))
     unlink("/output/report.md")
 
