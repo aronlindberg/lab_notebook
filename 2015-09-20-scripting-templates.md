@@ -12,7 +12,9 @@ Each project needs to have the following folders:
 
 The files in each folder are tied together by an `execute.R` script in the root folder which calls all other subscripts through `source()`, along these lines:
 
-    script_list <- list("static_cluster_validation.R", "routine_complexity.R", "temporal_cluster_validation.R", "file_graphs_munging_data.R", "social_complexity.R", "compiling_descriptive_stats.R", "correlation_matrix.R", "graphics.R", "analyzing_qualitative_coding.R", "statistical_tests.R")
+    script_list <- list("static_cluster_validation.R", "routine_complexity.R", "temporal_cluster_validation.R",
+    "file_graphs_munging_data.R", "social_complexity.R", "compiling_descriptive_stats.R", "correlation_matrix.R",
+    "graphics.R", "analyzing_qualitative_coding.R", "statistical_tests.R")
 
     for (i in 1:length(script_list)){
       try(source(script_list[[i]]))
@@ -24,7 +26,8 @@ All working directories and specification of paths should be set using relative 
 ## Loading/installing packages in a unitary way
 The packages are loaded either at the top of the script or in the main `execute.R` script. In order to make sure that all necessary packages are installed, use the following code to load and install packages:
 
-    required_packages <- c('TraMineR','TraMineRextras','magrittr', 'dplyr', 'rmarkdown', 'stringr', 'cluster', 'RColorBrewer', 'WeightedCluster', 'xlsx')
+    required_packages <- c('TraMineR','TraMineRextras','magrittr', 'dplyr', 'rmarkdown', 'stringr',
+    'cluster', 'RColorBrewer', 'WeightedCluster', 'xlsx')
     new_packages <- required_packages[!(required_packages %in% installed.packages()[,'Package'])]
     if(length(new_packages)) install.packages(new_packages)
     lapply(required_packages, library, character.only = TRUE)
