@@ -40,6 +40,16 @@ Credentials (e.g OAUTH 2.0) are stored in the root folder in a script called `cr
 
 In the `execute.R` script you can then call `source("credentials.R")`. To make sure that the credentials themselves are not shared the `.gitignore` needs to specify `credentials.R` so that the credentials themselves are never committed to the git repository.
 
+## Dependency Management
+To ensure that the code is reproducible across machines and time, we need to carefully specify which version of R and each package is used. This is done through a header which is essentially a abbreviated output from `sessionInfo()`, e.g.:
+
+    # R version 3.2.1 (2015-06-18)
+    # Platform: x86_64-apple-darwin13.4.0 (64-bit)
+    # Running under: OS X 10.10.4 (Yosemite)
+    # Packages: gdata_2.17.0, igraph_1.0.1, jsonlite_0.9.16, httpuv_1.3.3
+
+A future version of this template set may use Docker or a similar environment for replicating the environment more fully.
+
 ## Knitr templates
 All output should be compiled to a `.docx` document using the `knitr` package and `pandoc` (for converting `.md` files to `.docx` files). An example of how to do this can be seen below:
 
