@@ -1,4 +1,4 @@
-# Writing discussion sections is Hhard
+# Writing discussion sections is hard
 It still seems that writing discussion sections is like black magic to me. It's an ambiguous task that I don't quite know how to take on. Having said that, I went through a structured process of learning to write introductions which frame a problem in an interesting way, and that has definitely been an intellectual growth process. This indicates to me that I should be able to do something similar with regards to discussion sections too. Part of the challenge is that here we get to the more 'artistic', messy part of making a theoretical contribution. For understanding the frontend there is quite a bit of material to help scholars understand how to stage a contribution. This work mainly involves criticizing the literature, and we have a fair amount of explicitly formulated tools for doing that. Doing the same thing for discussion sections is more difficult, because this is where the actual theoretical contribution should be articulated.
 
 There are a couple of ways of approaching this. The first is to create a very high-level template:
