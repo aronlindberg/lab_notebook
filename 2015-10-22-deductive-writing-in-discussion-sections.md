@@ -1,0 +1,2 @@
+# Deductive writing in discussion sections
+One thing that I have learned from Cramton (2011) is that it can be very helpful to think in a deductive way. I.e., ask yourself, we have a number of findings in the paper - if we put these findings together with other things that we already know, what implications can we deduce from this? Meaning what behavior, cognitions, or emotions should we expect from people, and how can we (using the insights from the paper) predict and understand these behaviors, cognitions, or emotions?
