@@ -58,5 +58,8 @@ All output should be compiled to a `.docx` document using the `knitr` package an
     unlink("/output/report.md")
 
 ## Todo
+* Update relative path section with .gigitnore practice
+* Practices for GitHub issues, pull requests, and commits
+* Stargazer templates for regression models and summary tables
 * Visualization templates (ggplot2/ggvis)
 * Figure templates (TikZ)
