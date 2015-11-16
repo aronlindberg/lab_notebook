@@ -1,0 +1,9 @@
+# Notes on Ambidexterity
+* Much IT is focused on reducing variance in the name of creating efficiency and quality control through tightly managed processes. Therefore, such IT systems tend to crowd out exploration, at the expense of exploitation (Benner & Tushman, 2002).
+* However, recently more systems are coming online that explicitly facilitate exploration, such as IT-supported agile processes, or reconfigurable and lean manufacturing processes.
+* We are still challenged, however, in explaining how exploration and exploitation can occur together, i.e. how organizations can be ambidextrous.
+* Explanations of ambidexterity tend to rest on partitioning an organization in either space and time, meaning that it achieves what I would call "pseudo ambidexterity"
+* However, others have also theorized how certain dynamic environments are able to allow for "stretch practices", or harmonic, contextualized co-existence of exploration and exploitation processes.
+* Still, we do not understand the generic features of IT systems which allow for simultaneous ambidexterity, and especially of the "stretch practices" or "contextual conditions" related to IT systems which create simultaneous ambidexterity.
+* The thrust of our argument is based on the idea that knowledge is a fundamentally dynamic source of capabilities, that allow individuals to behave in ways which are not predisposed towards either exploration and exploitation, but that allows individuals to behave in a contextually appropriate ways, given that they have the appropriate knowledge resources and capabilities at hand. This is a different perspective from viewing IT as a "process management tool" that enforce either variance-reducing or agile practices.
+* Therefore, the knowledge-related IT capabilities of sensing, broadening and renewing can be expected to drive ambidexterity.
