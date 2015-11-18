@@ -13,4 +13,4 @@ This would have the following benefits:
 * Sparking new research ideas
 * Identifying high-performing students
 
-Key would be to get administrative support, or probably even better, a student committee to run it.
+Key would be to get administrative support, or probably even better, a student committee to run it. This could also be a good touchpoint with corporate sponsors.
