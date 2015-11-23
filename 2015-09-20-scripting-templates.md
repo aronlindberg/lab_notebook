@@ -59,7 +59,7 @@ All output should be compiled to a `.docx` document using the `knitr` package an
 
 ## Todo
 * Update relative path section with .gigitnore practice
-* Practices for GitHub issues, pull requests, and commits
+* Practices for GitHub issues, pull requests, and commits (https://help.github.com/articles/closing-issues-via-commit-messages/)
 * Stargazer templates for regression models and summary tables
 * Visualization templates (ggplot2/ggvis)
 * Figure templates (TikZ)
