@@ -57,7 +57,7 @@ This seems to be a persistent theme - our HMM results of OSS projects seem to in
 
 I've been trying to track down the cite for "causal ambiguity" for a while now:
 
-  Szulanski, G. (1996). *Exploring Internal Stickiness: Impediments to the Transfer of Best Practice Within the Firm*. Strategic Management Journal, 17(2), 27–43.
+  > Szulanski, G. (1996). *Exploring Internal Stickiness: Impediments to the Transfer of Best Practice Within the Firm*. Strategic Management Journal, 17(2), 27–43.
 
   Szulanski, G., & Jensen, R. J. (2006). *Presumtive Adaptation and the Effectiveness of Knowledge Transfer*. Strategic Management Journal, 957(February), 937–957.
 
