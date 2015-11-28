@@ -8,7 +8,7 @@ tags:
 # Paulus & Nijstad - Group Creativity: Innovation Through Collaboration
 On p. 34 (chapter 2 on the links between group diversity and creativity) they discuss the links between group configurations, divergent thinking, and creativity. I'm immediately thinking that a potential argument to be made is for different kinds of process diversity. This would entail evaluating the different forms of process diversity, explicate their meanings, and then show which effects that they have. Based on the results that we have, this would then culminate in showing how entropy only matters in the extreme (i.e. above the 75% quantile), how task complexity measures based on single transitions do not matter, but how subsequence-based measures such as turbulence do matter. This would then draw primarily on the literatures of diversity and creativity, and then show completely new forms of diversity. Additionally, we could also add the Optimal Matching distances, and hypothesize that creative sequences should be less standardized, which is also supported by the findings. We can link this to the literature on organizational routines as well, since many of these measures come from this literature.
 
-p. 36: noting that laboratory research on brainstorming generate less creative ideas. This implies that the social interdependence in the group or the group interaction decreases the variance and homogenizes thinking.
+> p. 36: noting that laboratory research on brainstorming generate less creative ideas. This implies that the social interdependence in the group or the group interaction decreases the variance and homogenizes thinking.
 
 Many of the passages concern diversity of characteristics in groups, but they do not seem to focus specifically on the various forms of diversity or variance of processes or procedural characteristics. This is a potential opportunity for us to contribute. Here we could decompose variety of processes in a number of characteristics:
 
@@ -19,7 +19,8 @@ Many of the passages concern diversity of characteristics in groups, but they do
 * Turbulence in activity durations (rhythm or variance in activity durations)
 * Subsequences
 
-  > p. 67: "Such a phenomenon [polarization] helps to explain why homogeneity coupled with high levels of interaction and intolerance of dissent are successful in maintaining and even exacerbating the beliefs held in corporate culture of cults."
+
+> p. 67: "Such a phenomenon [polarization] helps to explain why homogeneity coupled with high levels of interaction and intolerance of dissent are successful in maintaining and even exacerbating the beliefs held in corporate culture of cults."
 
 This would seem to be a major inhibitor of creativity, innovation, and heterogeneity in general. The desire of individuals to be part of a group. This seems to also be related to what I learned when reading about T-groups and psychoanalysis together with Ron Fry: that human beings are constantly caught in a tension between freedom and belonging - we all want to be free agents and individually unique, at the same time as we want to be part of a group, with the homogenizing effects that the latter entails. Similarly, the [Asch conformity experiments](https://en.wikipedia.org/wiki/Asch_conformity_experiments) showed that the human need to conform to the opinion of the majority is so strong that we will often deny basic sensory perceptions to align our assessments to that of a majority.
 
@@ -65,6 +66,6 @@ I've been trying to track down the cite for "causal ambiguity" for a while now:
 
 Again, this seems to indicate that social modularization should lead to creativity and heterogeneity. However, does this take into account boundary spanners across structural holes (Burt)? Perhaps the immigrants and foreign students are the boundary spanners here?
 
-  > p. 337: "Unfortunately, very little attnetion has been devoted to the effects of different kinds of tasks on group creativity."
+  > p. 337: "Unfortunately, very little attention has been devoted to the effects of different kinds of tasks on group creativity."
 
 Let the search for moderators begin!
