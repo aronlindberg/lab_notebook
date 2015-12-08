@@ -12,3 +12,8 @@ While I can increasingly see the benefits of generic-function style OO, I also t
 3. Function-based scripts - both reproducible and dynamic
 
 The last point, 3, largely represents the idea of abstracting away as much as possible into functions, so that the actual analysis scripts become very short. This way I can have multiple scripts which represent multiple variations on the same analysis, but all using the same underlying functions. It seems to me that the next, potential steps (i.e. 4 & 5) here would be to start learning S3 and S4. However, I think I need to transition more firmly to step 3 first - being able to do "function-based scripting" in a proper manner. I think that once I feel that this is insufficient, then it's time to move over the S3, but before I even feel the limitations of "function-based scripting" I think it's overkill to bring in object-orientation.
+
+For example, I can learn much from how the TraMineR code has been written:
+https://github.com/cran/TraMineR/blob/master/R/seqdef.R
+
+This seems to largely be well-structured functions which do not use a generic-function-OO approach. I think this is the way forward, until I hit any constraints.
