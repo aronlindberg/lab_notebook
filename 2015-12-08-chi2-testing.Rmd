@@ -1,0 +1,16 @@
+# Chi2 testing
+I often encounter the issue that I need to do a Chi2-test on a data-frame that is derived from Excel or similar. This seems to be a simple way  of doing this:
+
+```{r}
+data1 <- data.frame(exploitation = c(18, 14, 60, 38, 26), exploration = c(2, 13, 12, 14, 15))
+data2 <- data.frame(exploitation = c(9, 18, 42, 32, 55), exploration = c(2, 12, 14, 8, 20))
+
+chisq.test(data1)
+chisq.test(data2)
+```
+
+When the absolute values are very low, as in the case of `data2`, [estimates tend to be unreliable](http://stats.stackexchange.com/questions/81483/warning-in-r-chi-squared-approximation-may-be-incorrect). In these cases it's better to use Fisher's exact test.
+
+```{r}
+fisher.test(data2)
+```
