@@ -10,7 +10,7 @@ Each project needs to have the following folders:
 * output (to store output in the form of knitted `.md` and `.docx` files)
 * figures (for `.tex` or `R` files generating figures)
 
-The files in each folder are tied together by an `execute.R` script in the root folder which calls all other subscripts through `source()`, along these lines:
+The files in each folder are tied together by an `make.R` script in the root folder which calls all other subscripts through `source()`, along these lines:
 
     script_list <- list("static_cluster_validation.R", "routine_complexity.R", "temporal_cluster_validation.R",
     "file_graphs_munging_data.R", "social_complexity.R", "compiling_descriptive_stats.R", "correlation_matrix.R",
@@ -24,7 +24,7 @@ The files in each folder are tied together by an `execute.R` script in the root 
 All working directories and specification of paths should be set using relative paths. This means that `setwd()` should always be set to the root directory in the git repository, and then other files should be accessed using a path relative to that root directory, i.e. `source("R/functions.R", chdir= TRUE)`. The reason for doing this is to ensure replicability across different machines.
 
 ## Loading/installing packages in a unitary way
-The packages are loaded either at the top of the script or in the main `execute.R` script. In order to make sure that all necessary packages are installed, use the following code to load and install packages:
+The packages are loaded either at the top of the script or in the main `make.R` script. In order to make sure that all necessary packages are installed, use the following code to load and install packages:
 
     required_packages <- c('TraMineR','TraMineRextras','magrittr', 'dplyr', 'rmarkdown', 'stringr',
     'cluster', 'RColorBrewer', 'WeightedCluster', 'xlsx')
