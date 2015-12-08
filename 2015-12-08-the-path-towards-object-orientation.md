@@ -1,3 +1,9 @@
+---
+layout: post
+tags:
+- reproducibility
+- coding
+---
 # The Path towards Object-Orientation
 While I can increasingly see the benefits of generic-function style OO, I also think it may be a bit overkill for where I am right now. Below is an overview of how my coding as evolved:
 

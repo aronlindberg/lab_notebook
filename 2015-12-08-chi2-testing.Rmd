@@ -1,3 +1,9 @@
+---
+layout: post
+tags:
+- statistics
+- coding
+---
 # Chi2 testing
 I often encounter the issue that I need to do a Chi2-test on a data-frame that is derived from Excel or similar. This seems to be a simple way  of doing this:
 
